@@ -1,60 +1,98 @@
-*{
-margin: 0;
-padding: 0;
-text-decoration: none;
-
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
-.nav1{
-    background-color: #837d7d;
-    max-width: 3280px;
-    height: 50px;
-    margin-inline: auto;
-    color: #ffffff;
+.nav1 {
+  background-color: #837d7d;
+  max-width: 3280px;
+  height: 50px;
+  margin-inline: auto;
+  color: #ffffff;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.nav1_list{
-    display: flex;
-    list-style: none;
-    gap: 10px;
-    color: #ffffff;
+.nav1_list {
+  display: flex;
+  margin-left: 1%;
+  list-style: none;
+  gap: 30px;
+  color: #ffffff;
+  position: relative;  /* Adicionando o position para controle de sobreposição */
+  z-index: 10;         /* Garante que a lista fique acima de outros elementos */
 }
 
-.nav1_list a{
-    font-size: 32;
-    color: #ffffff;
+.nav1_list a {
+  font-size: 18px; /* Corrigido a unidade */
+  color: #ffffff;
+}
+
+.nav1_list2 {
+  display: flex;
+  margin-right: 1%;
+  margin-left: auto; /* Mudado de 70% para auto, para o item ficar à direita */
+  list-style: none;
+  gap: 10px;
+  color: #ffffff;
+}
+
+.nav1_list2 a {
+  font-size: 18px; /* Corrigido a unidade */
+  color: #ffffff;
+}
+
+#areaCliente {
+  background-color: #c2c1c1;
+  color: #ffffff;
+  white-space: nowrap;
+  margin-right: 30px; /* Afastando da borda direita */
+  padding: 9px 30px; /* Simplificado para um padding mais claro */
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+#areaCliente:hover {
+  background-color: #828282;
+  transition: 0.2s;
+  pointer-events: auto;
+  
+  
+}
+.nav2 {
+  background-color: #355382;
+  height: 60px;
+  margin-inline: auto;
+  color: #ffffff;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#logo_nav {
+  display: block; /* Certifique-se de que a imagem está sendo exibida */
+  visibility: visible; /* Certifique-se de que a imagem não está oculta */
+}
+
+.nav2_list {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  color: #ffffff;
+}
+
+.nav2_list a {
+  font-size: 24px; /* Corrigido a unidade */
+  color: #ffffff;
+}
+
+.conteudo_principal {
+  background-image: url(imagens/imagePrincipal.png);
+  display: grid;
 }
 
 
-.nav2{
-    background-color: #355382;
-    height: 50px;
-    margin-inline: auto;
-    color: #ffffff;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav2_list{
-    display: flex;
-    list-style: none;
-    gap: 10px;
-    color: #ffffff;
-}
-
-.nav2_list a{
-    font-size: 32;
-    color: #ffffff;
-}
-
-
-.conteudo_principal{
-    background-image: url(imagens/imagePrincipal.png);
-     display: grid;
-}
