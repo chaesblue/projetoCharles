@@ -1,8 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
   box-sizing: border-box;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+h2{
+  text-align: center;
+    font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+h3{
+  text-align: center;
+  white-space: inherit;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}  
+p{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #000000;
+  margin: 0.4rem;
 }
 
 .nav1 {
@@ -19,30 +45,30 @@
 
 .nav1_list {
   display: flex;
-  margin-left: 1%;
+  margin-left: 1.5%;
   list-style: none;
   gap: 30px;
   color: #ffffff;
-  position: relative;  /* Adicionando o position para controle de sobreposição */
-  z-index: 10;         /* Garante que a lista fique acima de outros elementos */
+  position: relative;  
+  z-index: 10;         
 }
 
 .nav1_list a {
-  font-size: 18px; /* Corrigido a unidade */
+  font-size: 18px; 
   color: #ffffff;
 }
 
 .nav1_list2 {
   display: flex;
   margin-right: 1%;
-  margin-left: auto; /* Mudado de 70% para auto, para o item ficar à direita */
+  margin-left: auto; 
   list-style: none;
-  gap: 10px;
+  gap: 30px;
   color: #ffffff;
 }
 
 .nav1_list2 a {
-  font-size: 18px; /* Corrigido a unidade */
+  font-size: 18px;
   color: #ffffff;
 }
 
@@ -50,14 +76,14 @@
   background-color: #c2c1c1;
   color: #ffffff;
   white-space: nowrap;
-  margin-right: 30px; /* Afastando da borda direita */
-  padding: 9px 30px; /* Simplificado para um padding mais claro */
+  margin: 30px; 
+  padding: 6px 30px; 
   border-radius: 20px;
   box-sizing: border-box;
 }
 
 #areaCliente:hover {
-  background-color: #828282;
+  background-color: #969696;
   transition: 0.2s;
   pointer-events: auto;
   
@@ -65,7 +91,7 @@
 }
 .nav2 {
   background-color: #355382;
-  height: 60px;
+  height: 55px;
   margin-inline: auto;
   color: #ffffff;
 
@@ -74,25 +100,163 @@
   align-items: center;
 }
 #logo_nav {
-  display: block; /* Certifique-se de que a imagem está sendo exibida */
-  visibility: visible; /* Certifique-se de que a imagem não está oculta */
+  display: block;
+  visibility: visible; 
 }
 
 .nav2_list {
   display: flex;
   list-style: none;
-  gap: 10px;
+  white-space: nowrap;
+  gap: 3rem;
+  margin-right: 5rem;
   color: #ffffff;
 }
 
 .nav2_list a {
-  font-size: 24px; /* Corrigido a unidade */
+  font-size: 1.2rem; 
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
   color: #ffffff;
 }
 
 .conteudo_principal {
-  background-image: url(imagens/imagePrincipal.png);
   display: grid;
+  place-items: center;
+  background-image: url(imagens/imagePrincipal.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 400px; 
+  display: grid;
+  color: #ffffff;
 }
+
+#titulo_principal{
+  margin-top: 4rem;
+  padding: 0.8rem;
+  border-radius: 5%;
+  width: 30rem;
+  background-color: #0e1d3677;
+}
+
+#cards_merchan{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3rem;
+  color: #000000;
+  gap: 20px;
+}
+
+.cards{
+  background-color: #ffffff;
+  border-radius: 8%;
+  width: 9rem;
+  height: 10rem;
+  padding: 0.2rem;
+  font-size: 0.6rem;
+  margin-bottom: 5rem;
+    box-shadow: 0px 6px 12px rgba(90, 113, 214, 0.507);
+  transition: box-shadow 0.3s ease;
+
+}
+
+.cards h3{
+  color: #355382;
+  padding: 0.3rem;
+  margin-bottom: 0.3rem;
+  font-size: 0.8rem;
+
+}
+
+.cards p{
+  padding: 0.3rem;
+  font-size: 0.8rem;
+  
+}
+
+#about_clientes{
+  width: 100%;
+  height: 500px; 
+  display: grid;
+  place-items: center;
+  color: #000000;
+}
+
+.about_clientes h1{
+  margin-top: 1rem;
+  border-bottom: 2px solid black;
+  padding: 1rem 8rem;
+}
+
+#about_clientes_div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 4rem;
+}
+
+
+
+.about_clientes_cards{
+  display: grid;
+  place-items: center;
+  border-radius: 3%;
+  width: 18rem;
+  height: 23rem;
+  padding: 0.2rem;
+  font-size: 0.6rem;
+  box-shadow: 0px 6px 12px rgba(90, 113, 214, 0.507); 
+  transition: box-shadow 0.3s ease;
+  border: 1px, solid, rgba(0, 0, 0, 0.555);
+  
+
+}
+
+.about_clientes_cards p{
+  font-size: 0.8rem;
+  margin-bottom: 3rem;
+}
+
+.about_clientes_imagem{
+  height: 7rem;
+  width: 7rem;
+  margin: 1rem;
+  
+}
+
+.about_clientes_cards h4{
+  color: #808080;
+  font-size: 0.9rem;  
+  
+}
+
+.about_clientes_cards h2{
+  color: #355382;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+#Quem_somos{
+  display: grid;
+  place-items: center;
+  margin-top: 8rem;
+  color: #000000;
+}
+
+.quem_somos h1{
+ border-bottom: 2px solid black;
+  padding: 1rem 8rem;
+  margin-bottom: 2rem;
+}
+
+#quem_somos_paragrafo{
+
+  padding: 0rem 4rem;
+  margin-bottom: 8rem;
+}
+
 
 
