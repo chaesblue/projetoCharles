@@ -59,11 +59,3 @@ details summary {
   cursor: pointer;
   font-weight: bold;
 }
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #002b5c;
-  color: white;
-  margin-top: 40px;
-}
