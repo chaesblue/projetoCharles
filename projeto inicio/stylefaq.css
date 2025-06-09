@@ -12,8 +12,9 @@ body {
 }
 
 header {
-  background-color: #002b5c;
+  background-color: #355382;
   padding: 15px;
+  border-top:50px solid #837D7D;
 }
 
 nav ul {
